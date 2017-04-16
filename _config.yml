@@ -6,7 +6,6 @@ description: Armchair adventures in Drupal.
 logo: site-logo.png
 search: true
 url: http://thelazydrupalist.com
-
 # Jekyll configuration
 
 permalink:   /:categories/:title/

@@ -2,56 +2,8 @@
 
   
     {
-      "title"			: "MathJax Example",
-      "link"			: "http://localhost:4000/blog/mathjax-example/",
-      "excerpt"		: "MathJax is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics  ... , and the other for inline mathematics  ... ."
-    }
-  
-
-  
-    ,{
-      "title"			: "Hello World Again",
-      "link"			: "http://localhost:4000/blog/hello-world-again/",
-      "excerpt"		: "Repeat of the First Post"
-    }
-  
-
-  
-    ,{
-      "title"			: "Rule 4 - When Walking on Rice Paper, Take Off Your Shoes",
-      "link"			: "http://localhost:4000/rules/rule-4-post/",
-      "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
-    }
-  
-
-  
-    ,{
-      "title"			: "Rule 3 - Go With The Flow.",
-      "link"			: "http://localhost:4000/rules/rule-3-post/",
-      "excerpt"		: "Examples and code for displaying images in posts."
-    }
-  
-
-  
-    ,{
-      "title"			: "Rule 2 - Swim in a Bigger Pond",
-      "link"			: "http://localhost:4000/rules/rule-2-post/",
-      "excerpt"		: "A ton of text to test readability."
-    }
-  
-
-  
-    ,{
-      "title"			: "Rule 1 - Drupal: It's a Tool, Not a Lifestyle.",
-      "link"			: "http://localhost:4000/rules/rule-1-post/",
-      "excerpt"		: "Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-    }
-  
-
-  
-    ,{
       "title"			: "Hello World",
-      "link"			: "http://localhost:4000/blog/hello-world/",
+      "link"			: "http://thelazydrupalist.com/blog/hello-world/",
       "excerpt"		: "Obligatory First Post"
     }
   
@@ -65,7 +17,7 @@
   
     ,{
       "title"			: "About the Jekyll Theme",
-      "link"			: "http://localhost:4000/about/",
+      "link"			: "http://thelazydrupalist.com/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
   
@@ -81,7 +33,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "http://localhost:4000/theme-setup/",
+      "link"			: "http://thelazydrupalist.com/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   
