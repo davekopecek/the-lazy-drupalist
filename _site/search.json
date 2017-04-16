@@ -3,80 +3,56 @@
   
     {
       "title"			: "MathJax Example",
-      "link"			: "http://thelazydrupalist.com/blog/mathjax-example/",
+      "link"			: "http://localhost:4000/blog/mathjax-example/",
       "excerpt"		: "MathJax is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics  ... , and the other for inline mathematics  ... ."
     }
   
 
   
     ,{
-      "title"			: "Hello World",
-      "link"			: "http://thelazydrupalist.com/blog/hello-world/",
-      "excerpt"		: "You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes!To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext."
+      "title"			: "Hello World Again",
+      "link"			: "http://localhost:4000/blog/hello-world-again/",
+      "excerpt"		: "Repeat of the First Post"
     }
   
 
   
     ,{
-      "title"			: "Override Author Byline Test Post",
-      "link"			: "http://thelazydrupalist.com/articles/author-override/",
-      "excerpt"		: "An article to test overriding the default site author."
-    }
-  
-
-  
-    ,{
-      "title"			: "Syntax Highlighting Post",
-      "link"			: "http://thelazydrupalist.com/articles/code-highlighting-post/",
-      "excerpt"		: "Demo post displaying the various ways of highlighting code in Markdown."
-    }
-  
-
-  
-    ,{
-      "title"			: "Sample Link Post",
-      "link"			: "http://thelazydrupalist.com/articles/sample-link-post/",
-      "excerpt"		: "Example and code for using link posts."
-    }
-  
-
-  
-    ,{
-      "title"			: "A Post with a Video",
-      "link"			: "http://thelazydrupalist.com/articles/video-post/",
+      "title"			: "Rule 4 - When Walking on Rice Paper, Take Off Your Shoes",
+      "link"			: "http://localhost:4000/rules/rule-4-post/",
       "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
     }
   
 
   
     ,{
-      "title"			: "Post with Large Feature Image and Text",
-      "link"			: "http://thelazydrupalist.com/articles/readability-feature-post/",
-      "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
-    }
-  
-
-  
-    ,{
-      "title"			: "A Post with Images",
-      "link"			: "http://thelazydrupalist.com/articles/sample-post-images/",
+      "title"			: "Rule 3 - Go With The Flow.",
+      "link"			: "http://localhost:4000/rules/rule-3-post/",
       "excerpt"		: "Examples and code for displaying images in posts."
     }
   
 
   
     ,{
-      "title"			: "Testing Readability with a Bunch of Text",
-      "link"			: "http://thelazydrupalist.com/articles/readability-post/",
+      "title"			: "Rule 2 - Swim in a Bigger Pond",
+      "link"			: "http://localhost:4000/rules/rule-2-post/",
       "excerpt"		: "A ton of text to test readability."
     }
   
 
   
     ,{
-      "title"			: "Sample Post",
-      "link"			: "http://thelazydrupalist.com/articles/sample-post/",
+      "title"			: "Rule 1 - Drupal: It's a Tool, Not a Lifestyle.",
+      "link"			: "http://localhost:4000/rules/rule-1-post/",
       "excerpt"		: "Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+    }
+  
+
+  
+    ,{
+      "title"			: "Hello World",
+      "link"			: "http://localhost:4000/blog/hello-world/",
+      "excerpt"		: "Obligatory First Post"
     }
   
 
@@ -89,7 +65,7 @@
   
     ,{
       "title"			: "About the Jekyll Theme",
-      "link"			: "http://thelazydrupalist.com/about/",
+      "link"			: "http://localhost:4000/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
   
@@ -105,7 +81,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "http://thelazydrupalist.com/theme-setup/",
+      "link"			: "http://localhost:4000/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   

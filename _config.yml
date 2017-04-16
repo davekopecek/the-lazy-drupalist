@@ -37,14 +37,15 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Dave Kopecek
-  avatar: bio-photo.jpg
+  avatar: dave-kopecek.jpg
   email: dave.kopecek@gmail.com
-  disqus-shortname:
-  twitter: #username
+  disqus-shortname: davekopecek
+  twitter: davekopecek
   facebook: #username
-  github: #username
+  github: davekopecek
+  bitbucket: davekopecek
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: dave-kopecek-054b4618
   instagram: #username
   flickr: #username
   tumblr: #username
