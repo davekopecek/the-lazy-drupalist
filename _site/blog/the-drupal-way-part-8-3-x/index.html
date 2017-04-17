@@ -1,0 +1,271 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>The Drupal Way Part 8.3.x &#8211; The Lazy Drupalist</title>
+<meta name="description" content="Finding sanity and best practices in Drupal land">
+<meta name="keywords" content="">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="The Drupal Way Part 8.3.x">
+<meta name="twitter:description" content="Finding sanity and best practices in Drupal land">
+<meta name="twitter:site" content="@davekopecek">
+<meta name="twitter:creator" content="@davekopecek">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://thelazydrupalist.com/images/the-drupal-way.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Drupal Way Part 8.3.x">
+<meta property="og:description" content="Finding sanity and best practices in Drupal land">
+<meta property="og:url" content="http://thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/">
+<meta property="og:site_name" content="The Lazy Drupalist">
+
+
+
+
+
+<link rel="canonical" href="http://thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/">
+<link href="http://thelazydrupalist.com/feed.xml" type="application/atom+xml" rel="alternate" title="The Lazy Drupalist Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://thelazydrupalist.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://thelazydrupalist.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://thelazydrupalist.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://thelazydrupalist.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+
+
+<!-- Icons -->
+<!--
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+-->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://thelazydrupalist.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://thelazydrupalist.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://thelazydrupalist.com/images/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://thelazydrupalist.com/" >Home</a></li>
+		  
+		    
+		    <li><a href="http://thelazydrupalist.com/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://thelazydrupalist.com/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://thelazydrupalist.com/rules/" >Rules</a></li>
+		  
+		    
+		    <li><a href="http://thelazydrupalist.com/tags/" >Tags</a></li>
+		  
+		    
+		    <li><a href="http://thelazydrupalist.com/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="http://thelazydrupalist.com/" class="site-logo" rel="home" title="The Lazy Drupalist"><img src="http://thelazydrupalist.com/images/site-logo.png" width="200" height="200" alt="The Lazy Drupalist logo" class="animated fadeInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="http://thelazydrupalist.com/images/the-drupal-way.jpg" class="entry-feature-image" alt="The Drupal Way Part 8.3.x" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          
+        </ul>
+        
+          <h1 class="entry-title">The Drupal Way Part 8.3.x</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://thelazydrupalist.com/images/dave-kopecek.jpg" class="bio-photo" alt="Dave Kopecek bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Dave Kopecek</span></span>
+        <span class="entry-date date published"><time datetime="2017-04-17T04:00:00-04:00"><i class="fa fa-calendar-o"></i> April 17, 2017</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=&amp;text=The%20Drupal%20Way%20Part%208.3.x&amp;url=http://thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/&amp;via=davekopecek" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>Holey moley what happened?  I was just sitting here, minding my own business, spelunking through a Drupal 7 render array, and when I looked up a techtonic shift had taken place.  One minute “there was a module for that”. You could tweak that module by digging in and twisting a hook to do what you need.  Then came Drupal 8 and it all got real.</p>
+
+<p>Once we just had easy-to-remember hook names like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>hook_field_attach_prepare_translation_alter(&amp;$entity, $context)
+</code></pre>
+</div>
+
+<p>Now we’re supposed to create endless yaml files and “just write a plugin”.  A what?</p>
+
+<p>I’m no Luddite.  I came to Drupal from the land of objects (and IDE’s and integrated debuggers &amp; profilers) and unlearned my ‘objectivity’, embracing Drupal like a slightly eccentric family member. You might say that for the past 11 or so years I’ve had an ongoing, rather intense, love-hate relationship with Drupal. I love what I’ve been able to accomplish.  From time to time I’ve had issues with various design decisions, but by and large if I stayed close to the current Drupal Way of doing things I’ve always been able to get done what I needed to with a minumum of muss and fuss. It might have been a bit quirky, but Drupal had a way about it.</p>
+
+<p>There has always been <a href="https://www.jeffgeerling.com/blogs/jeff-geerling/the-drupal-way">The Drupal Way</a>.  Over time a person could discover The Way, stay close to it and leverage some incredible technology to create wonderful things.  If you skew toward <a href="http://www.cipsum.com">MBA-Speak</a> you might call it a set of <em>Best Practices</em> for Drupal.  I shy away from that kind of hifalutin talk whenever possible. I just like to get things done and I like to repeatedly get predictable high quality results with minimal stress. Am I lazy? If going out of my way to automate and streamline and create things that work and are extensible so they can handle the unforseen so I can do other fun things makes a person lazy, then yes. Count me in. Until recently if you had the slightest inclination to do the least amount of work possible TDW was a wonderful thing and laziness was rewarded.</p>
+
+<p>And then, Drupal 8. Chaos! Bedlahm! Pandemonium!. Don’t get me wrong, it’s some damn fine code, but it’s a huge shift. I think <code class="highlighter-rouge">The Way</code> is still out there – evolving, but it’s damn hard to find. I’m having trouble and I have a feeling I’m not alone.  In the past year I’ve been to a DrupalCon, a Drupal Camp and several user group meetings and I keep running into people with basically the same problem:  There ain’t no way!</p>
+
+<p>Peoples… We’re going to find it!  The sooner we do, the sooner we can pop the footrest of our lazyboys back up and do what we do best. <a href="http://thelazydrupalist.com">The Lazy Drupalist</a> will explore my attempts to keep sane and discover best practices for Drupal development while:</p>
+
+<ol>
+  <li>Migrating several Drupal 6 sites to Drupal 8</li>
+  <li>Managing feature requests for existing Drupal 7 sites</li>
+  <li>Creating and deploying sites in D8</li>
+</ol>
+
+<p>Is this even possible?  Hell if I know.  Check back in from time to time and see.</p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'davekopecek'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://thelazydrupalist.com/blog/hello-world/" class="btn" title="Hello World">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Dave Kopecek. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+  <a href="https://twitter.com/davekopecek" title="Dave Kopecek on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+  
+  
+  <a href="https://linkedin.com/in/dave-kopecek-054b4618" title="Dave Kopecek on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+  
+  
+  
+  <a href="https://github.com/davekopecek" title="Dave Kopecek on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+  <a href="https://bitbucket.org/davekopecek" title="Dave Kopecek on bitbucket" target="_blank"><i class="fa fa-bitbucket fa-2x"></i></a>
+  
+  
+  
+  <a href="http://thelazydrupalist.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://thelazydrupalist.com';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://thelazydrupalist.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://thelazydrupalist.com/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

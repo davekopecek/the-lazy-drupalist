@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "The Drupal Way Part 8.3.x",
+      "link"			: "http://thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/",
+      "excerpt"		: "Finding sanity and best practices in Drupal land"
+    }
+  
+
+  
+    ,{
       "title"			: "Hello World",
       "link"			: "http://thelazydrupalist.com/blog/hello-world/",
       "excerpt"		: "Obligatory First Post"
@@ -16,9 +24,9 @@
 
   
     ,{
-      "title"			: "About the Jekyll Theme",
+      "title"			: "About the Lazy Drupalist",
       "link"			: "http://thelazydrupalist.com/about/",
-      "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
+      "excerpt"		: ""
     }
   
 

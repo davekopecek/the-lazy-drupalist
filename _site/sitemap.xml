@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/</loc>
+<lastmod>2017-04-17T04:00:00-04:00</lastmod>
+</url>
+<url>
 <loc>http://thelazydrupalist.com/blog/hello-world/</loc>
 <lastmod>2017-04-16T10:14:55-04:00</lastmod>
 </url>
