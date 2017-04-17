@@ -3,9 +3,9 @@
 title: The Lazy Drupalist
 locale: en_US
 description: Armchair adventures in Drupal.
-logo: site-logo.png
+logo: the-lazy-drupalist.png
 search: true
-url: http://thelazydrupalist.com
+url: http://www.thelazydrupalist.com
 # Jekyll configuration
 
 permalink:   /:categories/:title/
