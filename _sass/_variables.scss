@@ -1,46 +1,69 @@
-// TYPOGRAPHY ================================================
-$base-font                : 'source-sans-pro', sans-serif;
-$heading-font             : $base-font;
-$caption-font             : $base-font;
-$code-font                : 'source-code-pro', monospace;
-$alt-font                 : 'volkhov', serif;
+/* Typography */
+$base-font: 'source-sans-pro', sans-serif !default;
+$heading-font: $base-font !default;
+$caption-font: $base-font !default;
+$code-font: 'source-code-pro', monospace !default;
+$alt-font: 'volkhov', serif !default;
 
-$doc-font-size            : 16;
-$doc-line-height          : 24;
+$doc-font-size: 16 !default;
+$doc-line-height: 24 !default;
 
-$border-radius            : 3px;
+/* Colors */
+$body-color: #fff !default;
+$text-color: #222 !default;
+$base-color: #343434 !default;
+$comp-color: adjust-hue($base-color, 180) !default;
+$border-color: #ddd !default;
+$white: #fff !default;
+$black: #000 !default;
+$accent-color: $black !default;
+$link-color: #222 !default;
 
+/* Tables */
+$table-border-color: $border-color !default;
+$table-border: 1px solid $table-border-color !default;
+$table-background: $body-color !default;
+$table-header-color: lighten($table-background, 10) !default;
+$table-hover-color: darken($table-background, 2) !default;
+$table-stripe-color: darken($table-background, 4) !default;
+$table-stripe-color-hover: darken($table-stripe-color, 5) !default;
+
+/* Media Queries */
+$micro: "only screen and (min-width: 30em)" !default;
+$small: "only screen and (min-width: 37.5em)" !default;
+$medium: "only screen and (min-width: 48em)" !default;
+$large: "only screen and (min-width: 62em)" !default;
+$x-large: "only screen and (min-width: 86.375em)" !default;
+
+/* Brands */
+$behance-color: #1769ff !default;
+$bitbucket-color: #205081 !default;
+$dribbble-color: #ea4c89 !default;
+$facebook-color: #3b5998 !default;
+$flickr-color: #ff0084 !default;
+$github-color: #171516 !default;
+$google-plus-color: #dd4b39 !default;
+$instagram-color: #517fa4 !default;
+$linkedin-color: #007bb6 !default;
+$pinterest-color: #cb2027 !default;
+$rss-color: #fa9b39 !default;
+$twitter-color: #55acee !default;
+$youtube-color: #bb0000 !default;
+
+/* Border radius */
+$border-radius: 3px !default;
+
+/* Global transition */
+$global-transition: all 0.4s ease !default;
+
+/* Site dimensions */
+$site-logo-width: 75px !default;
+$site-logo-height: 75px !default;
+$main-max-width: $medium !default;
+$main-sidebar-max-width: $large !default;
 
 // set-up the body font-size / line-height
 body {
   margin-top: 0px + $doc-line-height;
   font-size: 0px + $doc-font-size;
 }
-
-
-// COLORS =====================================================
-$body-color               : #fff;
-$text-color               : #222;
-$base-color               : #343434;
-$comp-color               : adjust-hue($base-color, 180);
-$border-color             : #ddd;
-$white                    : #fff;
-$black                    : #000;
-$accent-color             : $black;
-$link-color               : #222;
-
-$table-border-color       : $border-color;
-$table-border             : 1px solid $table-border-color;
-$table-background         : $body-color;
-$table-header-color       : lighten($table-background, 10);
-$table-hover-color        : darken($table-background, 2);
-$table-stripe-color       : darken($table-background, 4);
-$table-stripe-color-hover : darken($table-stripe-color, 5);
-
-
-// MEDIA QUERIES ==============================================
-$micro                    : "only screen and (min-width: 30em)";
-$small                    : "only screen and (min-width: 37.5em)";
-$medium                   : "only screen and (min-width: 48em)";
-$large                    : "only screen and (min-width: 62em)";
-$x-large                  : "only screen and (min-width: 86.375em)";

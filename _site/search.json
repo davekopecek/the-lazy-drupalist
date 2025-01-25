@@ -3,7 +3,7 @@
   
     {
       "title"			: "The Drupal Way Part 8.3.x",
-      "link"			: "http://www.thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/",
+      "link"			: "https://www.thelazydrupalist.com/blog/the-drupal-way-part-8-3-x/",
       "excerpt"		: "Finding sanity and best practices in Drupal land"
     }
   
@@ -11,23 +11,13 @@
   
     ,{
       "title"			: "Hello World",
-      "link"			: "http://www.thelazydrupalist.com/blog/hello-world/",
+      "link"			: "https://www.thelazydrupalist.com/blog/hello-world/",
       "excerpt"		: "Obligatory First Post"
     }
   
 
 
 
-  
-
-  
-
-  
-    ,{
-      "title"			: "About the Lazy Drupalist",
-      "link"			: "http://www.thelazydrupalist.com/about/",
-      "excerpt"		: ""
-    }
   
 
   
@@ -41,9 +31,37 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "http://www.thelazydrupalist.com/theme-setup/",
+      "link"			: "https://www.thelazydrupalist.com/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
+  
+
+  
+
+  
+    ,{
+      "title"			: "About the Lazy Drupalist",
+      "link"			: "https://www.thelazydrupalist.com/about/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   

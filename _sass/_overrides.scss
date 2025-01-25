@@ -1,0 +1,20 @@
+@use "sass:math";
+@use "sass:color";
+
+// Override deprecated color functions
+@function tint($color, $percentage) {
+  @return color.mix(#fff, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return color.mix(#000, $color, $percentage);
+}
+
+// Override deprecated division operations
+@function strip-units($val) {
+  @return math.div($val, ($val * 0 + 1));
+}
+
+@function em($pxval, $base: $em-base) {
+  @return math.div($pxval, $base) * 1em;
+}

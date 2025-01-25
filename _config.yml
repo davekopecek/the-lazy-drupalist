@@ -5,7 +5,7 @@ locale: en_US
 description: Armchair adventures in Drupal.
 logo: the-lazy-drupalist.png
 search: true
-url: http://www.thelazydrupalist.com
+url: https://www.thelazydrupalist.com
 # Jekyll configuration
 
 permalink:   /:categories/:title/
@@ -13,8 +13,14 @@ markdown:    kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
+  quiet_deps: true
   style: compressed
-gems:
+  implementation: sass-embedded
+
+# Theme settings
+theme: jekyll-theme-so-simple
+
+plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed

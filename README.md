@@ -1,28 +1,58 @@
-# So Simple Theme
+# The Lazy Drupalist
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+A dumping ground for my thoughts on Drupal and ever-so-occasional attempts at improving the lives of folks who wade in the same waters. Created by me, [Dave Kopecek](https://www.davekopecek.com/).
 
-## Notable features:
+## ⚠️ Important Technical Note
 
-* Compatible with Jekyll 3 and GitHub Pages.
-* Responsive templates. Looks good on mobile, tablet, and desktop devices.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page](http://mmistakes.github.io/so-simple-theme/404.html) to get you started.
-* Basic [search capabilities](https://github.com/mathaywarduk/jekyll-search)
-* Support for Disqus Comments
+**TEMPORARY FIX IN PLACE**: We're currently suppressing Sass deprecation warnings that stem from using the legacy `@import` syntax. This will need to be addressed in the future as:
 
-![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
+1. `@import` is being deprecated in Sass
+2. The jekyll-theme-so-simple theme heavily relies on `@import`
+3. Recent updates to Ruby, Jekyll, and jekyll-sass-converter have made this more urgent
 
-See a [live version of So Simple](http://mmistakes.github.io/so-simple-theme/) hosted on GitHub.
+**TODO: Major refactor needed**
+- Theme needs to be forked and updated to use `@use`/`@forward`
+- All Sass files need to be modernized
+- Variables need to be properly scoped
+- Module system needs to be implemented correctly
 
----
+## About
 
-## Getting Started
+This blog documents adventures and experiences working with Drupal, sharing tips, tricks, and solutions that might help other Drupal developers. The blog is implemented using Jekyll with the So Simple theme.
 
-So Simple takes advantage of Sass and data files to make customizing easier and requires Jekyll 3.x.
+## How this thing works
 
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
+I work on Windows, because I'm too cool for Linux and too cheap for Mac. 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+### Prerequisites
+- Windows Subsystem for Linux (WSL) with Ubuntu
+- Ruby installed via WSL
+- Jekyll and Bundler gems
+
+### Local Setup on WSL
+
+1. Start WSL and navigate to the project directory:
+2. Install dependencies and run the Jekyll server:
+``` bash
+bundle install
+bundle exec jekyll serve
+```
+
+The site will be available at `http://localhost:4000`
+
+### Creating a New Post
+
+1. Create a new markdown file in `_posts/blog` with the filename format: `YYYY-MM-DD-title-of-post.md`
+
+2. Add the front matter at the top of the file:
+
+## Theme Documentation
+
+Information about the So Simple theme can be found in [THEME.md](THEME.md).
+
+## Links
+
+- [Live Blog](https://github.com/davekopecek/the-lazy-drupalist)
+- [Source Code](https://github.com/davekopecek/the-lazy-drupalist)
+- [Author's Website](https://www.davekopecek.com/)
+
