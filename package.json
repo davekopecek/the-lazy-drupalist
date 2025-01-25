@@ -10,15 +10,19 @@
     "url": "https://github.com/mmistakes/so-simple-theme/issues"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 16.0.0"
+  },
+  "scripts": {
+    "optimize": "mkdir -p images/optimized && mkdir -p images/originals && cp -n images/*.{jpg,png} images/originals/ 2>/dev/null || true && npx sharp-cli -i \"images/**/*.{jpg,png}\" -o images/optimized -q 80 && cp -r images/optimized/* images/",
+    "build": "npm run optimize && bundle exec jekyll build"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-watch": "~0.5.2",
-    "grunt-contrib-imagemin": "~0.2.0",
-    "grunt-svgmin": "~0.2.0"
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-svgmin": "^7.0.0",
+    "sharp-cli": "^4.1.1"
   }
 }

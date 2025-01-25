@@ -38,6 +38,17 @@ bundle install
 bundle exec jekyll serve
 ```
 
+To build the site with optimized images:
+``` bash
+npm run build
+```
+
+This command will:
+1. Optimize any new images in the `images/` directory (backing up originals to `images/originals/`)
+2. Build the Jekyll site
+
+For development without image optimization:
+
 The site will be available at `http://localhost:4000`
 
 ### Creating a New Post
